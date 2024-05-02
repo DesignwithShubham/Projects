@@ -1,0 +1,53 @@
+.Container {
+    width: 100%;
+    height: 100vh;
+    background: #78866B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Calculator {
+    background: rgb(60, 60, 60);
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.Calculator form input {
+    border: 5px;
+    outline: 0px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: whitesmoke;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+form .Display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0px;
+}
+
+form input.Screen {
+    text-align: right;
+    flex: 1;
+    font-size: 50px;
+    font-family: "Silkscreen", sans-serif;
+    background:  #A4B663;
+    border: 3px solid black;
+
+}
+
+form input.Answer {
+    width: 135px;
+    background: rgb(207, 145, 0);
+
+}
+
+form input.oprator {
+    color: rgb(207, 145, 0)
+}
