@@ -1,0 +1,39 @@
+.Container {
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+}
+
+#box {
+    height: 200px;
+    width: 200px;
+    font-size: 90px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    color: beige;
+    display: flex;
+    text-align: center;
+    background: rgb(255, 28, 104);
+    border: 0px;
+    border-radius: 40px;
+    box-shadow: 10px 10px 150px rgb(239, 95, 95) ;
+}
+
+#upbtn {
+    font-size: 80px;
+    color: rgb(248, 75, 75);
+}
+
+#dwnbtn {
+    font-size: 80px;
+    color: rgb(248, 75, 75);
+}
+
+#div1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
