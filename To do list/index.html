@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1 id="tdl">To Do List</h1>
+    </div>
+    <div id="div1">
+        <input type="text" placeholder="  Type here to add" id="textbox">
+        <button id="button" onclick="addtask()">ADD</button>
+    </div>
+
+    <div>
+
+        <ol id="Ul1">
+        </ol>
+
+    </div>
+
+    <script>
+        const text = document.getElementById("textbox");
+        const ol = document.getElementById("Ul1");
+
+        function addtask() {
+            const addlist = document.createElement("Ul1");
+            addlist.innerHTML = text.value;
+            ol.appendChild(addlist);
+            const btn = document.createElement("button");
+            addlist.append(btn);
+            btn.innerHTML = "complete";
+
+            btn.onclick = function () {
+                addlist.style.textDecoration = "line-through";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
